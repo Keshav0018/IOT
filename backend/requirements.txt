@@ -1,0 +1,10 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+paho-mqtt>=2.1
+numpy>=2.0
+# The backrest SVM was pickled with scikit-learn 1.6.1; any 1.6/1.7 loads it.
+scikit-learn>=1.6,<1.8
+joblib>=1.4
+# CPU build is plenty for a 10x10 CNN:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
